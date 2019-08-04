@@ -1,0 +1,11 @@
+[Unit]
+Description = Send Room sensor.
+
+[Service]
+ExecStart = /home/pi/manage-home-sensing/global.py $(tail -1 /home/pi/sec) $(head -1 /home/pi/sec) roomSensor
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
+

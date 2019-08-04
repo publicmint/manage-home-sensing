@@ -9,7 +9,7 @@ SET_PIN = 18
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(SET_PIN,GPIO.IN,pull_up_down=GPIO.PUD_UP)
 
-SEND_TIME = 60 # seconds
+SEND_TIME = 300 # seconds
 
 count = 0
 
